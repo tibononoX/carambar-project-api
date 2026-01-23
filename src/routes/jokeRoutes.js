@@ -39,6 +39,9 @@ router.get("/random", jokeController.getRandomJoke);
 // Get a joke by ID
 router.get("/:id", jokeController.getJokeById);
 
+//Edit a joke by ID
+router.put("/:id", jokeController.updateJoke);
+
 // Delete a joke by ID
 router.delete("/:id", jokeController.deleteJoke);
 

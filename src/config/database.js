@@ -9,7 +9,7 @@ console.log(`DB_NAME from .env: ${process.env.DB_NAME}`);
 const sequelize = new Sequelize({
   dialect: "sqlite",
   storage: dbPath,
-  logging: true,
+  logging: false,
 });
 
 console.log(

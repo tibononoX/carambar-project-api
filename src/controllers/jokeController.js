@@ -43,6 +43,25 @@ exports.getJokeById = async (req, res) => {
   }
 };
 
+// Edit a joke by ID
+exports.updateJoke = async (req, res) => {
+  try {
+    const { question, answer } = req.body;
+    const [updated] = await Joke.update(
+      { question, answer },
+      { where: { id: req.params.id } },
+    );
+    if (updated) {
+      const updatedJoke = await Joke.findByPk(req.params.id);
+      res.status(200).json(updatedJoke);
+    } else {
+      res.status(404).json({ error: "Joke not found" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Failed to update joke" });
+  }
+};
+
 // Get random joke
 exports.getRandomJoke = async (req, res) => {
   try {

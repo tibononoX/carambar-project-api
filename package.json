@@ -7,8 +7,7 @@
     "setup": "pnpm i",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "migrate": "npx sequelize-cli db:migrate",
-    "seed": "npx sequelize-cli db:seed:all"
+    "migrate": "rm -f carambar_jokes.db && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
