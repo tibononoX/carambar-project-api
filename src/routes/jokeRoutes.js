@@ -23,8 +23,8 @@ const jokeController = require("../controllers/jokeController");
  *         - answer
  *       example:
  *         id: 1
- *         question: Why did the chicken cross the road?
- *         answer: To get to the other side!
+ *         question: Que dit un citron cambrioleur ?
+ *         answer: Plus un zeste !
  */
 
 // Create a new joke

@@ -14,12 +14,8 @@ exports.createJoke = async (req, res) => {
 // Get all jokes
 exports.getAllJokes = async (req, res) => {
   try {
-    console.log("getAllJokes called");
-    console.log("Joke model:", Joke);
-    console.log("Joke.findAll:", typeof Joke.findAll);
     const jokes = await Joke.findAll();
-    console.log("Query result:", jokes);
-    console.log("Number of jokes:", jokes.length);
+    console.log("Query result:", jokes.length, "jokes");
 
     res.status(200).json(jokes);
   } catch (error) {
