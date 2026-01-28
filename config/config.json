@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "carambar_jokes.db",
+    "host": "127.0.0.1",
+    "dialect": "sqlite",
+    "storage": "carambar_jokes.db"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "carambar_jokes_test.db",
+    "host": "127.0.0.1",
+    "dialect": "sqlite",
+    "storage": "carambar_jokes_test.db"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "carambar_jokes_prod.db",
+    "host": "127.0.0.1",
+    "dialect": "sqlite",
+    "storage": "carambar_jokes_prod.db"
+  }
+}
