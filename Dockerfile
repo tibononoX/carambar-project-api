@@ -26,7 +26,7 @@ COPY ./ /usr/src/app
 RUN npm install -g pnpm@10.28.1
 
 # Create back app
-RUN cd ./backend && pnpm i --prod
+RUN cd ./api && pnpm i --prod
 
 # expose full app on APP_PORT
 EXPOSE ${APP_PORT}
