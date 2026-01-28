@@ -11,8 +11,18 @@ const app = express();
 
 // Middleware
 app.use(helmet());
-app.use(cors());
-if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL.split(",") ?? "http://localhost:3000",
+    optionsSuccessStatus: 200,
+    credentials: true,
+  }),
+);
+
+if (process.env.NODE_ENV === "development") {
+  const morgan = require("morgan");
+  app.use(morgan("dev"));
+}
 app.use(express.json());
 
 // Swagger setup
