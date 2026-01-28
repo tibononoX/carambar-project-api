@@ -18,7 +18,6 @@ app.use(
     credentials: true,
   }),
 );
-
 if (process.env.NODE_ENV === "development") {
   const morgan = require("morgan");
   app.use(morgan("dev"));
@@ -34,7 +33,10 @@ const swaggerOptions = {
       version: "1.0.0",
       description: "API for managing Carambar jokes",
     },
-    servers: [{ url: `http://localhost:${process.env.PORT || 5000}/api/v1` }],
+    servers: [
+      { url: `http://localhost:${process.env.PORT || 5000}/api/v1` },
+      { url: `https://carambar-project-api-1.onrender.com/api/v1` },
+    ],
   },
   apis: ["./src/routes/*.js", "./src/controllers/*.js"],
 };
