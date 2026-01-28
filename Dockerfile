@@ -27,7 +27,6 @@ RUN npm install -g pnpm@10.28.1
 
 # Create back app
 RUN pnpm i --prod
-RUN pnpm approve-builds --yes
 
 # expose full app on APP_PORT
 EXPOSE ${APP_PORT}
