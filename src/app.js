@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(helmet());
 app.use(cors());
-app.use(morgan("dev"));
+if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 app.use(express.json());
 
 // Swagger setup
