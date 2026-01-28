@@ -20,6 +20,12 @@ app.use(
     credentials: true,
   }),
 );
+console.log(
+  "Cors URLs :",
+  process.env.FRONTEND_URL.split(",") ??
+    "http://localhost:5173/carambar-project-front",
+);
+
 if (process.env.NODE_ENV === "development") {
   const morgan = require("morgan");
   app.use(morgan("dev"));
