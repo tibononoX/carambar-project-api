@@ -60,7 +60,7 @@ L'API écoute sur le port 8000 par défaut.
 - `GET /random` : Retourne une blague aléatoire
 - `GET /` : Retourne toutes les blagues
 - `GET /:id` : Retourne une blague spécifique par ID
-- `PUT /:id` : Mets à jour une blague spécifique (voir la [ttps://carambar-project-api-1.onrender.com/api-docs](doc) pour les data à fournir)
+- `PUT /:id` : Mets à jour une blague spécifique (voir la [doc](https://carambar-project-api-1.onrender.com/api-docs) pour les data à fournir)
 
 ### Exemple de réponse
 
@@ -76,8 +76,8 @@ L'API écoute sur le port 8000 par défaut.
 
 - **Repository Frontend :** [https://github.com/tibononox/carambar-project-front](https://github.com/tibononox/carambar-project-front)
 - **Site déployé :** [https://tibononox.github.io/carambar-project-front/](https://tibononox.github.io/carambar-project-front/)
-- **API Déployée :** [[https://carambar-project-api-1.onrender.com/api/v1](https://carambar-project-api-1.onrender.com/api/v1)]
-- **API Doc (Swagger) :** [[https://carambar-project-api-1.onrender.com/api-docs](https://carambar-project-api-1.onrender.com/api-docs)]
+- **API Déployée :** [https://carambar-project-api-1.onrender.com/api/v1](https://carambar-project-api-1.onrender.com/api/v1)
+- **API Doc (Swagger) :** [https://carambar-project-api-1.onrender.com/api-docs](https://carambar-project-api-1.onrender.com/api-docs)
 
 ## Scripts disponibles
 
