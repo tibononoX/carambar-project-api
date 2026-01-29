@@ -13,9 +13,9 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin:
-      process.env.FRONTEND_URL.split(",") ??
-      "http://localhost:5173/carambar-project-front",
+    origin: process.env.FRONTEND_URL
+      ? process.env.FRONTEND_URL.split(",")
+      : "http://localhost:3000",
     optionsSuccessStatus: 200,
     credentials: true,
   }),
